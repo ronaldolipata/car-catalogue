@@ -4,10 +4,22 @@ const { Schema, model } = mongoose;
 
 const carSchema = new Schema({
   carModel: {
-    brand: String,
-    model: String,
-    year: String,
-    color: String,
+    brand: {
+      type: String,
+      require: true,
+    },
+    model: {
+      type: String,
+      require: true,
+    },
+    year: {
+      type: String,
+      require: true,
+    },
+    color: {
+      type: String,
+      require: true,
+    },
   },
 });
 
