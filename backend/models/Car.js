@@ -7,19 +7,19 @@ const carSchema = new Schema(
     carModel: {
       brand: {
         type: String,
-        require: true,
+        required: true,
       },
       model: {
         type: String,
-        require: true,
+        required: true,
       },
       year: {
-        type: String,
-        require: true,
+        type: Number,
+        required: true,
       },
       color: {
         type: String,
-        require: true,
+        required: true,
       },
     },
   },
